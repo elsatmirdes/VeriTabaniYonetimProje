@@ -1,0 +1,122 @@
+						Şehirler Arası Ootobüs Firması
+
+Customer (Müşteri)
+
+CustomerID (PK)
+FirstName
+LastName
+BirthDate
+Address
+PhoneNumber
+Email
+
+
+Employee (Çalışan)
+
+EmployeeID (PK)
+FirstName
+LastName
+Position
+Salary
+PhoneNumber
+Email
+
+
+Journey (Sefer)
+
+JourneyID (PK)
+Departure
+Arrival
+DepartureDate
+ArrivalDate
+
+
+Ticket (Bilet)
+
+TicketID (PK)
+CustomerID (FK)
+JourneyID (FK)
+SeatNumber
+Price
+PurchaseDate
+
+
+Bus (Otobüs)
+
+BusID (PK)
+PlateNumber
+Brand
+Model
+SeatCount
+
+
+Payment (Ödeme)
+
+PaymentID (PK)
+TicketID (FK)
+PaymentDate
+Amount
+PaymentMethod
+
+Schedule (Sefer Programı)
+
+ScheduleID (PK)
+JourneyID (FK)
+BusID (FK)
+DepartureTime
+ArrivalTime
+
+
+Driver (Şoför)
+
+DriverID (PK)
+FirstName
+LastName
+PhoneNumber
+
+
+EmployeeSchedule (Çalışan Programı)
+
+EmployeeScheduleID (PK)
+EmployeeID (FK)
+ScheduleID (FK)
+
+
+BusMaintenance (Otobüs Bakımı)
+
+MaintenanceID (PK)
+BusID (FK)
+MaintenanceDate
+Description
+Feedback (Geribildirim)
+
+FeedbackID (PK)
+CustomerID (FK)
+JourneyID (FK)
+Rating
+Comment
+
+
+Discount (İndirim)
+
+DiscountID (PK)
+DiscountCode
+DiscountPercentage
+ExpiryDate
+
+
+Promotion (Promosyon)
+
+PromotionID (PK)
+PromotionCode
+Description
+DiscountPercentage
+
+
+Advertisement (Reklam)
+
+AdID (PK)
+AdTitle
+AdContent
+AdStartDate
+AdEndDate

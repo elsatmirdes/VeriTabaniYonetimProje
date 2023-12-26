@@ -1,0 +1,20 @@
+Müşteri ve Çalışan İlişkisi:
+Bir kişi hem müşteri hem de çalışan olabilir.
+
+Bilet ve Müşteri İlişkisi:
+Bir bilet, bir müşteriye ait olmalıdır. Yani, "Ticket" tablosundaki "CustomerID" alanı, "Customer" tablosundaki bir müşteri ID'ye referans vermelidir.
+
+Bilet ve Sefer İlişkisi:
+Bir bilet, bir sefere ait olmalıdır. Yani, "Ticket" tablosundaki "JourneyID" alanı, "Journey" tablosundaki bir sefer ID'ye referans vermelidir.
+
+Bilet ve Ödeme İlişkisi:
+Bir biletin bir ödeme kaydı olmalıdır. Yani, "Payment" tablosundaki "TicketID" alanı, "Ticket" tablosundaki bir bilet ID'ye referans vermelidir.
+
+Otobüs ve Sefer İlişkisi:
+Bir otobüs, bir sefere ait olmalıdır. Yani, "Schedule" tablosundaki "BusID" alanı, "Bus" tablosundaki bir otobüs ID'ye referans vermelidir.
+
+Çalışan ve Çalışan Programı İlişkisi:
+Bir çalışanın programı, "EmployeeSchedule" tablosu üzerinden belirtilmelidir. Yani, "EmployeeSchedule" tablosundaki "EmployeeID" alanı, "Employee" tablosundaki bir çalışan ID'ye referans vermelidir.
+
+Otobüs Bakımı ve Otobüs İlişkisi:
+Otobüs bakım kayıtları, "BusMaintenance" tablosu üzerinden belirtilmelidir. Yani, "BusMaintenance" tablosundaki "BusID" alanı, "Bus" tablosundaki bir otobüs ID'ye referans vermelidir.
